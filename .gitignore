@@ -1,0 +1,10 @@
+# Node modules
+node_modules/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos temporales y configuraciones de VS Code
+.vscode/
+*.tmp
