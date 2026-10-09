@@ -1,6 +1,6 @@
-if (true) {
-  var d = 'var';
-  let e = 'let';
+const nivelExterior = 'exterior';
+{
+    const nivelInterior = "interior";
+    console.log(nivelInterior);
 }
-console.log(d);
-console.log(e);
+console.log(nivelExterior);
