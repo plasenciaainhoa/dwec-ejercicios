@@ -1,6 +1,9 @@
+var d;
+let e;
+
 if (true) {
-  var d = 'var';
-  let e = 'let';
+    d = 'var';
+    e = 'let';
 }
 console.log(d);
 console.log(e);
