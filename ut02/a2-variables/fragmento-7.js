@@ -1,6 +1,6 @@
-if (true) {
-  var d = 'var';
-  let e = 'let';
+let x = 1;
+{
+    let xLocal = 2;
+    console.log(x);
+    console.log(xLocal);
 }
-console.log(d);
-console.log(e);
