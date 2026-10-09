@@ -1,6 +1,7 @@
-if (true) {
-  var d = 'var';
-  let e = 'let';
-}
-console.log(d);
-console.log(e);
+let i;
+let j;
+
+for (i = 0; i < 3; i++) {}
+for (j = 0; j < 3; j++) {}
+console.log(i);
+console.log(j);
