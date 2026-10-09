@@ -6,3 +6,14 @@ let valoraciones = 10;
 
 tiempoPreparacionMinutos = 36;
 valoraciones = 9.7;
+
+const fichaTecnica = `
+Diarios de recetas :)
+
+- Nombre: ${nombreReceta}
+- Categoría: ${categoriaReceta}
+- Comensales: ${numeroComensales} personas
+- Tiempo estimado: ${tiempoPreparacionMinutos} minutos
+- Valoración media: ${valoracionUsuarios} / 5
+
+`;
