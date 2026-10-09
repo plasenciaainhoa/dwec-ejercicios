@@ -17,3 +17,7 @@ Diarios de recetas :)
 - Valoración media: ${valoracionUsuarios} / 5
 
 `;
+console.log(fichaTecnica);
+
+//comprobamos
+console.log("Tipo de 'nombreReceta':", typeof nombreReceta);
