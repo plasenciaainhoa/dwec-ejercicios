@@ -21,3 +21,8 @@ console.log(fichaTecnica);
 
 //comprobamos
 console.log("Tipo de 'nombreReceta':", typeof nombreReceta);
+console.log("Tipo de 'numeroComensales':", typeof numeroComensales);
+console.log("Tipo de 'tiempoPreparacionMinutos':", typeof tiempoPreparacionMinutos);
+console.log("Tipo de 'esVegetariana':", typeof esVegetariana);
+console.log("Tipo de 'categoriaReceta':", typeof categoriaReceta);
+console.log("Tipo de 'valoracionUsuarios':", typeof valoracionUsuarios);
