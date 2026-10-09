@@ -1,6 +1,6 @@
-if (true) {
-  var d = 'var';
-  let e = 'let';
+function calcular() {
+    const secreto = 42;
+    return secreto * 2;
 }
-console.log(d);
-console.log(e);
+const resultado = calcular();
+console.log(resultado);
