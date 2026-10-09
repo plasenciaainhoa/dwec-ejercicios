@@ -1,0 +1,12 @@
+# UT2 · A2 · Laboratorio de variables y ámbitos
+
+## Tabla de Análisis de Fragmentos
+
+| **Fragmento 1** | Imprimirá `undefined` y luego `5`. | `undefined`<br>`5` | **Hoisting de `var`**: La declaración de la variable se eleva al inicio de su ámbito e inicializa como `undefined`. Asigna el valor `5` en la segunda línea. |
+| **Fragmento 2** | Lanzará un error de referencia (`ReferenceError`). | `Uncaught ReferenceError: Cannot access 'b' before initialization` | **Temporal Dead Zone (TDZ)**: Las variables declaradas con `let` sufren *hoisting*, pero permanecen inaccesibles dentro de la TDZ hasta que se ejecuta la sentencia de declaración. |
+| **Fragmento 3** | Lanzará un error de tipo (`TypeError`). | `Uncaught TypeError` | **Inmutabilidad de enlace en `const`**: No se puede reasignar un valor a una variable declarada con `const`. |
+| **Fragmento 4** | Imprimirá `'var'` y luego lanzará un `ReferenceError` al intentar imprimir `e`. | `'var'`<br>`Uncaught ReferenceError: ` | **Ámbito de bloque**: `var` tiene ámbito de función o global (no respeta el bloque `if`), mientras que `let` tiene ámbito de bloque y no existe fuera de él. |
+| **Fragmento 5** | Imprimirá `3` y luego dará un `ReferenceError` al intentar imprimir `j`. | `3`<br>`Uncaught ReferenceError: j is not defined` | **Variables de control en bucles**: La variable `i` (`var`) se fuga del bucle al ámbito global/función, manteniendo el valor `3`. La variable `j` (`let`) solo existe dentro de su bucle `for`. |
+| **Fragmento 6** | Imprimirá `'interior'` y luego `'exterior'`. | `'interior'`<br>`'exterior'` | **Sombreado de variables (*Shadowing*)**: Se declara una constante `nivel` en el bloque interno que oculta temporalmente a la del bloque externo sin sobrescribirla. |
+| **Fragmento 7** | Lanzará un error de referencia (`ReferenceError`). | `Uncaught ReferenceError: Cannot access 'x' before initialization` | **TDZ en ámbitos anidados**: La declaración `let x = 2` dentro del bloque crea una nueva variable local. Su TDZ cubre desde el inicio del bloque hasta su declaración, bloqueando el acceso a la variable externa `x = 1`. |
+| **Fragmento 8** | Imprimirá `84` y luego dará un `ReferenceError` para `secreto`. | `84`<br>`Uncaught ReferenceError` | **Ámbito de función**: La constante `secreto` está declarada dentro de la función `calcular()` y no es accesible fuera del cuerpo de la función. |
