@@ -36,3 +36,23 @@
   - Boolean() -> `true` 
   - Number() -> `0` 
   - String() -> `" "`
+
+  - **[] (array vacío):** 
+  - Boolean() -> `true` 
+  - Number() -> `0` 
+  - String() -> `""`
+
+  - **'12.5':** 
+  - Boolean() -> `true` 
+  - Number() -> `12.5` 
+  - String() -> `"12.5"`
+
+  - **-0:** 
+  - Boolean() -> `false` 
+  - Number() -> `-0` 
+  - String() -> `"0"`
+
+  - **[7] (array con un elemento):** 
+  - Boolean() -> `true` 
+  - Number() -> `7` 
+  - String() -> `"7"`
