@@ -100,3 +100,12 @@
   - parseInt(): NaN
   - parseFloat(): NaN
   - Number.isNaN(): true
+
+
+## Punto 4: Pueba de prompt
+
+- **Tipo de dato devuelto:** El `prompt()` siempre devuelve un string con lo que escribe el usuario, aunque se introduzcan números.
+- **El problema:** Al usar el operador `+` entre un string y un número, JavaScript hace una concatenación en lugar de una suma matemática.
+- **Ejemplo práctico:** Si el usuario introduce `20`, la operación `20 + 1` da como resultado el texto `'201'` en lugar del número `21`.
+- **La causa:** Ocurre por una conversión implícita de tipos donde el operador `+` prefiere juntar textos si uno de los lados es un string.
+- **La solución:** Hay que convertir explícitamente el texto del prompt a número antes de operar usando `Number()` o `parseInt()`, quedando así: `Number(prompt('Edad:')) + 1`.
