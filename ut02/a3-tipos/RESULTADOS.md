@@ -56,3 +56,47 @@
   - Boolean() -> `true` 
   - Number() -> `7` 
   - String() -> `"7"`
+
+  ## Punto 3: Pruebas del programa interactivo
+
+- **Entrada: 42**
+  - typeof: string
+  - Number(): 42
+  - parseInt(): 42
+  - parseFloat(): 42
+  - Number.isNaN(): false
+
+- **Entrada: 3,5 (con coma)**
+  - typeof: string
+  - Number(): NaN
+  - parseInt(): 3
+  - parseFloat(): 3
+  - Number.isNaN(): true
+
+- **Entrada: 3.5**
+  - typeof: string
+  - Number(): 3.5
+  - parseInt(): 3
+  - parseFloat(): 3.5
+  - Number.isNaN(): false
+
+- **Entrada: 12px**
+  - typeof: string
+  - Number(): NaN
+  - parseInt(): 12
+  - parseFloat(): 12
+  - Number.isNaN(): true
+
+- **Entrada: Cadena vacía ("")**
+  - typeof: string
+  - Number(): 0
+  - parseInt(): NaN
+  - parseFloat(): NaN
+  - Number.isNaN(): false
+
+- **Entrada: hola**
+  - typeof: string
+  - Number(): NaN
+  - parseInt(): NaN
+  - parseFloat(): NaN
+  - Number.isNaN(): true
