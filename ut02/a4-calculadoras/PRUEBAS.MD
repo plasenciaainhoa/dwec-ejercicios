@@ -48,3 +48,20 @@
   * Entrada: Peso = 55 kg, Altura = 160 cm
   * Resultado esperado: IMC = 21.5
   * Resultado obtenido: Correcto, coincide exactamente con el cálculo esperado.
+
+  ## 4. Nómina simplificada (4-nomina.js)
+
+* **Caso de prueba 1:**
+  * Entrada: Bruto anual = 24000 €, Pagas = 14
+  * Resultado esperado: Bruto mensual = 1714.29 €, IRPF (15%) = 257.14 €, SS (6.47%) = 110.92 €, Neto mensual = 1346.23 €
+  * Resultado obtenido: Correcto, mostrado correctamente en formato de tabla por consola.
+
+* **Caso de prueba 2:**
+  * Entrada: Bruto anual = 30000 €, Pagas = 12
+  * Resultado esperado: Bruto mensual = 2500.00 €, IRPF (15%) = 375.00 €, SS (6.47%) = 161.75 €, Neto mensual = 1963.25 €
+  * Resultado obtenido: Correcto, mostrado correctamente en formato de tabla por consola.
+
+* **Caso de prueba 3:**
+  * Entrada: Bruto anual = 18000 €, Pagas = 14
+  * Resultado esperado: Bruto mensual = 1285.71 €, IRPF (15%) = 192.86 €, SS (6.47%) = 83.19 €, Neto mensual = 1009.66 €
+  * Resultado obtenido: Correcto, mostrado correctamente en formato de tabla por consola.
