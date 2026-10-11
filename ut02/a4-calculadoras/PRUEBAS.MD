@@ -31,3 +31,20 @@
   * Entrada: 7384 segundos
   * Resultado esperado: 02:03:04
   * Resultado obtenido: Correcto, coincide exactamente con el cálculo esperado.
+
+  ## 3. Cálculo de IMC (3-imc.js)
+
+* **Caso de prueba 1:**
+  * Entrada: Peso = 70 kg, Altura = 175 cm
+  * Resultado esperado: IMC = 22.9
+  * Resultado obtenido: Correcto, coincide exactamente con el cálculo esperado.
+
+* **Caso de prueba 2:**
+  * Entrada: Peso = 85 kg, Altura = 180 cm
+  * Resultado esperado: IMC = 26.2
+  * Resultado obtenido: Correcto, coincide exactamente con el cálculo esperado.
+
+* **Caso de prueba 3:**
+  * Entrada: Peso = 55 kg, Altura = 160 cm
+  * Resultado esperado: IMC = 21.5
+  * Resultado obtenido: Correcto, coincide exactamente con el cálculo esperado.
