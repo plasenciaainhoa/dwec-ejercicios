@@ -30,3 +30,9 @@
 - **parseInt('12px')** -> `12` (Esperable - Lee desde la izquierda y extrae el número)
 - **parseInt('3.9')** -> `3` (Esperable - Trunca los decimales y se queda con la parte entera)
 - **parseFloat('3.9')** -> `3.9` (Esperable - Este sí respeta y devuelve los decimales)
+
+## Punto 2: Conversiones de tipos específicos
+- **' ' (un espacio):** 
+  - Boolean() -> `true` 
+  - Number() -> `0` 
+  - String() -> `" "`
