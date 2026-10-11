@@ -65,3 +65,20 @@
   * Entrada: Bruto anual = 18000 €, Pagas = 14
   * Resultado esperado: Bruto mensual = 1285.71 €, IRPF (15%) = 192.86 €, SS (6.47%) = 83.19 €, Neto mensual = 1009.66 €
   * Resultado obtenido: Correcto, mostrado correctamente en formato de tabla por consola.
+
+## 5. Precio con IGIC (5-igic.js)
+
+* **Caso de prueba 1:**
+  * Entrada: Precio base = 100 €, Tipo de IGIC = 7 (por defecto)
+  * Resultado esperado: Impuesto = 7.00 €, Total = 107.00 €
+  * Resultado obtenido: Correcto, coincide exactamente con el cálculo esperado.
+
+* **Caso de prueba 2:**
+  * Entrada: Precio base = 150.50 €, Tipo de IGIC = 13.5
+  * Resultado esperado: Impuesto = 20.32 €, Total = 170.82 €
+  * Resultado obtenido: Correcto, coincide exactamente con el cálculo esperado.
+
+* **Caso de prueba 3:**
+  * Entrada: Precio base = 200 €, Cancelar (o vacío en el tipo de IGIC, aplicando el `?? 7`)
+  * Resultado esperado: Impuesto = 14.00 €, Total = 214.00 € (aplicando el 7% por defecto)
+  * Resultado obtenido: Correcto, el operador de fusión nula `??` asigna el 7% correctamente al cancelar.
