@@ -14,3 +14,20 @@
   * Entrada: 10.5 km y -10 °C
   * Resultado esperado: 10500 m, 6.52 mi, 5.67 NM / 14.00 °F, 263.15 K
   * Resultado obtenido: Correcto, coincide exactamente con el cálculo esperado.
+
+## 2. Conversor de tiempo (2-tiempo.js)
+
+* **Caso de prueba 1:**
+  * Entrada: 3665 segundos
+  * Resultado esperado: 01:01:05
+  * Resultado obtenido: Correcto, coincide exactamente con el cálculo esperado.
+
+* **Caso de prueba 2:**
+  * Entrada: 90 segundos
+  * Resultado esperado: 00:01:30
+  * Resultado obtenido: Correcto, coincide exactamente con el cálculo esperado.
+
+* **Caso de prueba 3:**
+  * Entrada: 7384 segundos
+  * Resultado esperado: 02:03:04
+  * Resultado obtenido: Correcto, coincide exactamente con el cálculo esperado.
