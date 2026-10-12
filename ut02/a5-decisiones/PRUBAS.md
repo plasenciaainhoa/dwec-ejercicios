@@ -100,3 +100,30 @@
   * Entrada: Mes = 4 (Abril), Año = 2026
   * Resultado esperado: 30 días
   * Resultado obtenido: Correcto, el switch agrupado procesa correctamente los meses de 30 días.
+
+## 5. Tarifa de entrada
+
+* **Caso de prueba 1 (Miércoles - Gratis general):**
+  * Entrada: Edad = 30, Carnet = no, Día = miércoles
+  * Resultado esperado: Entrada gratuita (por ser miércoles)
+  * Resultado obtenido: Correcto, la primera condición del miércoles anula el precio a 0.
+
+* **Caso de prueba 2 (Menor de edad con descuento):**
+  * Entrada: Edad = 10, Carnet = no, Día = lunes
+  * Resultado esperado: Precio: 6.00 € (50% de descuento por edad)
+  * Resultado obtenido: Correcto, aplica el descuento por estar entre 6 y 17 años.
+
+* **Caso de prueba 3 (Estudiante adulto con descuento):**
+  * Entrada: Edad = 25, Carnet = si, Día = jueves
+  * Resultado esperado: Precio: 6.00 € (50% de descuento por carnet)
+  * Resultado obtenido: Correcto, detecta el carnet de estudiante.
+
+* **Caso de prueba 4 (Tarifa general):**
+  * Entrada: Edad = 40, Carnet = no, Día = viernes
+  * Resultado esperado: Precio: 12.00 €
+  * Resultado obtenido: Correcto, aplica la tarifa estándar al no cumplir ninguna excepción.
+
+* **Caso de prueba 5 (Mayor de 65 años - Gratis):**
+  * Entrada: Edad = 70, Carnet = no, Día = martes
+  * Resultado esperado: Entrada gratuita
+  * Resultado obtenido: Correcto, aplica la gratuidad por superar los 65 años.
