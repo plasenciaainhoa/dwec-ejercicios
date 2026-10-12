@@ -61,3 +61,25 @@
   * Entrada: -1
   * Resultado esperado: Error (fuera de rango)
   * Resultado obtenido: Correcto, la cláusula de guarda detecta que es menor que 0.
+
+## 3. Año bisiesto (3-bisiesto.js)
+
+* **Caso de prueba 1:**
+  * Entrada: 1900
+  * Resultado esperado: No es bisiesto (divisible por 4 y por 100, pero no por 400)
+  * Resultado obtenido: Correcto, la condición evalúa que no es bisiesto.
+
+* **Caso de prueba 2:**
+  * Entrada: 2000
+  * Resultado esperado: Sí es bisiesto (divisible por 4, por 100 y también por 400)
+  * Resultado obtenido: Correcto, la condición evalúa que sí es bisiesto.
+
+* **Caso de prueba 3:**
+  * Entrada: 2024
+  * Resultado esperado: Sí es bisiesto (divisible por 4 y no por 100)
+  * Resultado obtenido: Correcto, la condición evalúa que sí es bisiesto.
+
+* **Caso de prueba 4:**
+  * Entrada: 2026
+  * Resultado esperado: No es bisiesto (no es divisible por 4)
+  * Resultado obtenido: Correcto, la condición evalúa que no es bisiesto.
