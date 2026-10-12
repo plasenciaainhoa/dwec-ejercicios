@@ -127,3 +127,25 @@
   * Entrada: Edad = 70, Carnet = no, Día = martes
   * Resultado esperado: Entrada gratuita
   * Resultado obtenido: Correcto, aplica la gratuidad por superar los 65 años.
+
+## 6. Semáforo con switch 
+
+* **Caso de prueba 1 (Rojo):**
+  * Entrada: "rojo"
+  * Resultado esperado: Acción: Detente, el semáforo está en rojo.
+  * Resultado obtenido: Correcto, entra en el caso rojo y se detiene correctamente con el `break`.
+
+* **Caso de prueba 2 (Ámbar y efecto fall-through):**
+  * Entrada: "ambar" (o "ámbar")
+  * Resultado esperado: Muestra la precaución en ámbar y, debido a la ausencia intencionada del `break`, ejecuta también la acción de verde en cascada.
+  * Resultado obtenido: Correcto, evidencia el comportamiento *fall-through* del switch.
+
+* **Caso de prueba 3 (Verde con normalización):**
+  * Entrada: "  VERDE  " (con mayúsculas y espacios alrededor)
+  * Resultado esperado: Acción: Puedes pasar, el semáforo está en verde.
+  * Resultado obtenido: Correcto, las funciones `toLowerCase()` y `trim()` limpian y estandarizan la entrada antes de evaluarla.
+
+* **Caso de prueba 4 (Color desconocido):**
+  * Entrada: "azul"
+  * Resultado esperado: Color desconocido
+  * Resultado obtenido: Correcto, al no coincidir con ningún caso definido, se activa la cláusula `default`.
