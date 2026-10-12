@@ -83,3 +83,20 @@
   * Entrada: 2026
   * Resultado esperado: No es bisiesto (no es divisible por 4)
   * Resultado obtenido: Correcto, la condición evalúa que no es bisiesto.
+
+## 4. Días del mes (4-dias-mes.js)
+
+* **Caso de prueba 1:**
+  * Entrada: Mes = 2 (Febrero), Año = 2024 (Bisiesto)
+  * Resultado esperado: 29 días
+  * Resultado obtenido: Correcto, el cálculo bisiesto funciona y asigna 29 días a febrero.
+
+* **Caso de prueba 2:**
+  * Entrada: Mes = 2 (Febrero), Año = 2026 (No bisiesto)
+  * Resultado esperado: 28 días
+  * Resultado obtenido: Correcto, asigna 28 días a febrero.
+
+* **Caso de prueba 3:**
+  * Entrada: Mes = 4 (Abril), Año = 2026
+  * Resultado esperado: 30 días
+  * Resultado obtenido: Correcto, el switch agrupado procesa correctamente los meses de 30 días.
